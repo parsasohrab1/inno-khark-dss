@@ -479,3 +479,55 @@ if __name__ == "__main__":
         print(f"   ✅ {filename} رمزنگاری شد")
     
     print("\n✅ فرآیند تولید و رمزنگاری داده‌ها با موفقیت انجام شد")
+
+## Development
+
+This repository implements the command dashboard (لایه نمایش) and its supporting API described in the SRS above. It is a two-service application:
+
+- `backend/` — FastAPI service exposing REST + WebSocket endpoints over islands, hazard scenarios, logistics zones, resource allocations, and real-time alerts. Includes the synthetic data generator used to seed demo data.
+- `frontend/` — React + TypeScript + Vite command dashboard: KPI overview, GIS map (MapLibre), logistics table, real-time alert feed, and SitRep view.
+
+### Run with Docker Compose
+
+```bash
+docker compose up --build
+```
+
+- Dashboard: http://localhost:5173
+- API: http://localhost:8000 (docs at `/docs`)
+- Postgres: localhost:5432
+
+### Run locally without Docker
+
+Backend:
+
+```bash
+cd backend
+cp .env.example .env
+pip install -e ".[dev]"
+python -m app.seed        # populate demo data
+uvicorn app.main:app --reload
+```
+
+Frontend:
+
+```bash
+cd frontend
+cp .env.example .env
+npm install
+npm run dev
+```
+
+### Tests & linting
+
+```bash
+cd backend && pytest && ruff check .
+cd frontend && npm run lint && npm run build
+```
+
+### Generate synthetic data only (no database required)
+
+```bash
+python scripts/generate_synthetic_data.py ./synthetic_data
+```
+
