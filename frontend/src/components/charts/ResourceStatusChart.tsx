@@ -22,7 +22,7 @@ export function ResourceStatusChart({ allocations }: ResourceStatusChartProps) {
 
   return (
     <div className="h-64 rounded-lg border border-command-border bg-command-panel p-4">
-      <div className="mb-2 text-sm text-slate-300">وضعیت تخصیص منابع</div>
+      <div className="mb-2 text-sm text-slate-300">Resource allocation status</div>
       <ResponsiveContainer width="100%" height="85%">
         <PieChart>
           <Pie data={data} dataKey="count" nameKey="status" outerRadius={80}>

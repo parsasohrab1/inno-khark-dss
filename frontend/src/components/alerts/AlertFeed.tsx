@@ -13,10 +13,10 @@ const levelClasses: Record<Alert["level"], string> = {
 export function AlertFeed({ alerts }: AlertFeedProps) {
   return (
     <div className="flex h-full flex-col rounded-lg border border-command-border bg-command-panel p-4">
-      <div className="mb-2 text-sm text-slate-300">جریان هشدارهای بلادرنگ</div>
+      <div className="mb-2 text-sm text-slate-300">Real-time alert feed</div>
       <div className="flex-1 space-y-2 overflow-auto">
         {alerts.length === 0 && (
-          <div className="text-xs text-slate-500">هشداری ثبت نشده است</div>
+          <div className="text-xs text-slate-500">No alerts recorded</div>
         )}
         {alerts.map((alert, idx) => (
           <div

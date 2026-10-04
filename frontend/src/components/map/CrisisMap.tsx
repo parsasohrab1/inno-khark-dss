@@ -46,7 +46,7 @@ export function CrisisMap({ islands, zones }: CrisisMapProps) {
     islands.forEach((island) => {
       const marker = new maplibregl.Marker({ color: "#3b82f6" })
         .setLngLat([island.longitude, island.latitude])
-        .setPopup(new maplibregl.Popup().setText(`${island.name} — جمعیت: ${island.population}`))
+        .setPopup(new maplibregl.Popup().setText(`${island.name} — Population: ${island.population}`))
         .addTo(map);
       markersRef.current.push(marker);
     });
@@ -56,7 +56,7 @@ export function CrisisMap({ islands, zones }: CrisisMapProps) {
         .setLngLat([zone.longitude, zone.latitude])
         .setPopup(
           new maplibregl.Popup().setText(
-            `${zone.zone_id} — شدت: ${zone.severity.toFixed(1)} — اولویت: ${(zone.priority_index * 100).toFixed(0)}%`,
+            `${zone.zone_id} — Severity: ${zone.severity.toFixed(1)} — Priority: ${(zone.priority_index * 100).toFixed(0)}%`,
           ),
         )
         .addTo(map);

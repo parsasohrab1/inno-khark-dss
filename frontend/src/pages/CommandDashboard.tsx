@@ -26,12 +26,12 @@ export function CommandDashboard() {
   return (
     <div className="flex flex-col gap-4">
       <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
-        <KpiCard label="بحران‌های فعال" value={summary?.active_hazards ?? "—"} tone="warn" />
-        <KpiCard label="جمعیت در معرض خطر" value={summary?.population_at_risk.toLocaleString("fa-IR") ?? "—"} tone="critical" />
-        <KpiCard label="مناطق با اولویت بحرانی" value={summary?.zones_in_critical_priority ?? "—"} tone="critical" />
-        <KpiCard label="منابع در حال انتقال" value={summary?.resources_in_transit ?? "—"} tone="ok" />
+        <KpiCard label="Active crises" value={summary?.active_hazards ?? "—"} tone="warn" />
+        <KpiCard label="Population at risk" value={summary?.population_at_risk.toLocaleString("fa-IR") ?? "—"} tone="critical" />
+        <KpiCard label="Critical-priority zones" value={summary?.zones_in_critical_priority ?? "—"} tone="critical" />
+        <KpiCard label="Resources in transit" value={summary?.resources_in_transit ?? "—"} tone="ok" />
         <KpiCard
-          label="میانگین وضعیت ارتباطات"
+          label="Average communication status"
           value={summary ? `${(summary.average_communication_status * 100).toFixed(0)}%` : "—"}
         />
       </div>

@@ -15,13 +15,13 @@ export function Logistics() {
       <table className="w-full text-sm">
         <thead className="sticky top-0 bg-command-panel text-slate-400">
           <tr className="text-right">
-            <th className="p-3">منطقه</th>
-            <th className="p-3">جمعیت</th>
-            <th className="p-3">شدت</th>
-            <th className="p-3">اولویت</th>
-            <th className="p-3">وضعیت ارتباطات</th>
-            <th className="p-3">حمل‌ونقل</th>
-            <th className="p-3">فاصله تا انبار (کیلومتر)</th>
+            <th className="p-3">Zone</th>
+            <th className="p-3">Population</th>
+            <th className="p-3">Severity</th>
+            <th className="p-3">Priority</th>
+            <th className="p-3">Communication status</th>
+            <th className="p-3">Transport</th>
+            <th className="p-3">Distance to warehouse (km)</th>
           </tr>
         </thead>
         <tbody>

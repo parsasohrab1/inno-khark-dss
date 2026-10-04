@@ -1,170 +1,170 @@
 # inno-khark-dss
-سامانه پشتیبانی تصمیم‌گیری مبتنی بر هوش مصنوعی برای مدیریت بحران و لجستیک در جزیره
-۱. معرفی سامانه (Introduction)
-۱-۱. عنوان طرح
-سامانه هوشمند پشتیبانی تصمیم‌گیری مدیریت بحران و لجستیک جزیره‌ای مبتنی بر هوش مصنوعی (AI-DSS Island)
+AI-Based Decision Support System for Crisis and Logistics Management on an Island
+1. System Introduction
+1-1. Project Title
+Intelligent AI-Based Decision Support System for Island Crisis and Logistics Management (AI-DSS Island)
 
-۱-۲. چشم‌انداز
-ایجاد یک سامانه کاملاً مستقل و غیرمتمرکز برای پشتیبانی تصمیم‌گیری در شرایط بحرانی در مناطق جزیره‌ای که با محدودیت‌های شدید ارتباطی، جغرافیایی و لجستیکی مواجه هستند. این سامانه با بهره‌گیری از هوش مصنوعی، داده‌های سنتتیک و فناوری‌های نوین رمزنگاری، امکان مدیریت بهینه منابع، تخصیص لجستیک و نجات‌رسانی را در شرایط قطع کامل ارتباطات فراهم می‌کند.
+1-2. Vision
+Create a fully independent and decentralized system for decision support in crisis conditions in island regions facing severe communication, geographic and logistical constraints. Using artificial intelligence, synthetic data and modern cryptographic technologies, this system enables optimal resource management, logistics allocation and rescue operations even under a complete communications blackout.
 
-۱-۳. اهداف کلان
-ارائه راهکارهای تصمیم‌گیری بلادرنگ در مدیریت بحران جزیره‌ای
+1-3. Overall Objectives
+Provide real-time decision-making solutions for island crisis management
 
-بهینه‌سازی تخصیص منابع لجستیکی با استفاده از الگوریتم‌های هوش مصنوعی
+Optimize logistics resource allocation using artificial intelligence algorithms
 
-ایجاد شبکه ارتباطی مش‌محور غیرمتمرکز برای شرایط قطع ارتباطات
+Create a decentralized mesh-based communication network for communication-outage conditions
 
-تولید داده‌های سنتتیک با کیفیت بالا برای آموزش مدل‌های هوش مصنوعی
+Generate high-quality synthetic data for training artificial intelligence models
 
-ثبت اختراع با رویکرد رمزنگاری نوین برای حفظ مالکیت فکری
+Patent filing with a novel cryptographic approach to protect intellectual property
 
-۲. مستندات نیازمندی‌های نرم‌افزاری (SRS)
-۲-۱. معرفی کلی سیستم
-۲-۱-۱. هدف سیستم
-سیستم AI-DSS Island یک پلتفرم جامع پشتیبانی تصمیم‌گیری است که برای مدیریت بحران‌های طبیعی (سیل، طوفان، زلزله، بالا آمدن سطح آب دریا) در مناطق جزیره‌ای طراحی شده است. این سیستم با الهام از چارچوب‌های مشابه مانند AI4SIDS و Digital Lifeline، قابلیت‌های پیش‌بینی، تحلیل و تصمیم‌گیری هوشمند را ارائه می‌دهد.
+2. Software Requirements Specification (SRS)
+2-1. General System Overview
+2-1-1. System Purpose
+The AI-DSS Island system is a comprehensive decision support platform designed for managing natural crises (floods, storms, earthquakes, sea level rise) in island regions. Inspired by similar frameworks such as AI4SIDS and Digital Lifeline, it provides intelligent forecasting, analysis and decision-making capabilities.
 
-۲-۱-۲. حوزه کاربری
-جزایر کوچک در حال توسعه (SIDS)
+2-1-2. Application Domain
+Small island developing states (SIDS)
 
-مناطق ساحلی و بنادر
+Coastal areas and ports
 
-عملیات امداد و نجات دریایی
+Maritime search and rescue operations
 
-مدیریت لجستیک اضطراری
+Emergency logistics management
 
-۲-۱-۳. ذی‌نفعان
-مدیران بحران و امدادگران
+2-1-3. Stakeholders
+Crisis managers and rescuers
 
-سازمان‌های امدادرسان (هلال احمر، UNOCHA)
+Relief organizations (Red Crescent, UNOCHA)
 
-جوامع محلی جزیره‌نشین
+Local island communities
 
-نهادهای دولتی و نظامی
+Government and military institutions
 
-۲-۲. نیازمندی‌های عملکردی (Functional Requirements)
-FR-1: ورودی داده (Data Ingestion)
-شناسه	شرح	اولویت
-FR-1.1	دریافت داده‌های ماهواره‌ای (تصاویر، ارتفاع سنجی، دما)	بالا
-FR-1.2	دریافت داده‌های حسگرهای IoT (باران‌سنج، سطح آب، بادسنج)	بالا
-FR-1.3	دریافت گزارش‌های میدانی از امدادگران (متن، صدا، تصویر)	متوسط
-FR-1.4	دریافت داده‌های اقلیمی و پیش‌بینی آب‌وهوا	بالا
-FR-1.5	دریافت سیگنال‌های SOS از طریق شبکه مش (LoRa/BLE)	بالا
-FR-2: تحلیل و پیش‌بینی هوش مصنوعی
-شناسه	شرح	اولویت
-FR-2.1	پیش‌بینی سیلاب با استفاده از مدل‌های ترکیبی (داده‌های حسگر، ماهواره، گزارش‌های شهروندی)	بالا
-FR-2.2	محاسبه شاخص آسیب‌پذیری جمعیت بر اساس عوامل جمعیتی و جغرافیایی	بالا
-FR-2.3	اولویت‌بندی مناطق بر اساس شاخص اضطرار (0-100)	بالا
-FR-2.4	تحلیل مسیرهای چندوجهی حمل‌ونقل (پیاده، خودرو، هلیکوپتر، شناور)	بالا
-FR-2.5	بهینه‌سازی تخصیص منابع با الگوریتم‌های تطبیقی (تکامل‌گرا یا چندهدفه)	بالا
-FR-3: سیستم تصمیم‌گیری و هشدار
-شناسه	شرح	اولویت
-FR-3.1	تولید خودکار هشدار هنگام عبور ریسک از آستانه تعیین‌شده	بالا
-FR-3.2	ارائه سناریوهای تصمیم‌گیری جایگزین به مدیران بحران	بالا
-FR-3.3	تولید گزارش‌های وضعیت خودکار (SitRep) در پایان هر دوره عملیاتی	متوسط
-FR-3.4	داشبورد فرماندهی بلادرنگ با نقشه‌های تعاملی	بالا
-FR-3.5	ارسال هشدار از طریق کانال‌های مختلف (SMS، رادیو، شبکه‌های اجتماعی)	متوسط
-FR-4: شبکه ارتباطی غیرمتمرکز
-شناسه	شرح	اولویت
-FR-4.1	ایجاد شبکه مش Ad-Hoc با استفاده از TCP Sockets در شرایط قطع ارتباط	بالا
-FR-4.2	پشتیبانی از پروتکل‌های LoRa و BLE Mesh برای ارتباطات دوربرد	بالا
-FR-4.3	مسیریابی تحمل‌پذیر تأخیر (DTN) برای ارتباطات متناوب	بالا
-FR-4.4	همگام‌سازی داده‌ها هنگام بازگشت ارتباط	متوسط
-FR-5: ثبت و پیگیری تراکنش‌های امدادی
-شناسه	شرح	اولویت
-FR-5.1	ثبت هر بسته امدادی با هش رمزنگاری SHA-256 در دفترکل غیرمتمرکز	بالا
-FR-5.2	ارائه اثبات تحویل قابل راستی‌آزمایی	بالا
-FR-5.3	جلوگیری از انحراف و سرقت کمک‌های امدادی از طریق زنجیره بلوکی	بالا
-۲-۳. نیازمندی‌های غیرعملکردی (Non-Functional Requirements)
-شناسه	شرح	معیار پذیرش
-NFR-1	قابلیت اجرا به‌صورت کاملاً آفلاین (Offline-First)	بدون نیاز به اتصال اینترنت برای عملکرد اصلی
-NFR-2	زمان پاسخ‌دهی کمتر از ۵ ثانیه برای تصمیم‌گیری‌های اضطراری	پاسخ به درخواست‌های مسیریابی و اولویت‌بندی
-NFR-3	مقیاس‌پذیری برای حداقل ۱۰۰۰ منطقه جغرافیایی همزمان	پشتیبانی از ۱۰۰۰ ناحیه با داده‌های لجستیکی
-NFR-4	امنیت رمزنگاری سطح نظامی	استفاده از الگوریتم‌های AES-256 و SHA-256
-NFR-5	قابلیت بازیابی پس از قطعی	خودترمیمی شبکه در کمتر از ۶۰ ثانیه
-NFR-6	قابلیت حمل (Portability)	اجرا روی سخت‌افزار استاندارد بدون وابستگی به ابر
-۲-۴. معماری سیستم
+2-2. Functional Requirements
+FR-1: Data Ingestion
+ID	Description	Priority
+FR-1.1	Receive satellite data (imagery, altimetry, temperature)	High
+FR-1.2	Receive IoT sensor data (rain gauges, water level, anemometers)	High
+FR-1.3	Receive field reports from rescuers (text, audio, images)	Medium
+FR-1.4	Receive climate data and weather forecasts	High
+FR-1.5	Receive SOS signals via the mesh network (LoRa/BLE)	High
+FR-2: AI Analysis and Prediction
+ID	Description	Priority
+FR-2.1	Flood prediction using hybrid models (sensor data, satellite, citizen reports)	High
+FR-2.2	Calculate the population vulnerability index based on demographic and geographic factors	High
+FR-2.3	Prioritize areas based on the urgency index (0-100)	High
+FR-2.4	Analyze multimodal transport routes (on foot, vehicle, helicopter, vessel)	High
+FR-2.5	Optimize resource allocation with adaptive algorithms (evolutionary or multi-objective)	High
+FR-3: Decision and Alert System
+ID	Description	Priority
+FR-3.1	Automatically generate alerts when risk crosses a defined threshold	High
+FR-3.2	Present alternative decision scenarios to crisis managers	High
+FR-3.3	Automatically generate situation reports (SitRep) at the end of each operational period	Medium
+FR-3.4	Real-time command dashboard with interactive maps	High
+FR-3.5	Send alerts through various channels (SMS, radio, social networks)	Medium
+FR-4: Decentralized Communication Network
+ID	Description	Priority
+FR-4.1	Create an ad-hoc mesh network using TCP sockets during communication outages	High
+FR-4.2	Support LoRa and BLE Mesh protocols for long-range communication	High
+FR-4.3	Delay-tolerant networking (DTN) routing for intermittent communication	High
+FR-4.4	Data synchronization when connectivity returns	Medium
+FR-5: Recording and Tracking Relief Transactions
+ID	Description	Priority
+FR-5.1	Record each relief package with a SHA-256 cryptographic hash in a decentralized ledger	High
+FR-5.2	Provide verifiable proof of delivery	High
+FR-5.3	Prevent diversion and theft of relief aid through a blockchain	High
+2-3. Non-Functional Requirements
+ID	Description	Acceptance criteria
+NFR-1	Ability to run fully offline (Offline-First)	No internet connection required for core operation
+NFR-2	Response time under 5 seconds for emergency decisions	Responses to routing and prioritization requests
+NFR-3	Scalability for at least 1000 simultaneous geographic zones	Support for 1000 zones with logistics data
+NFR-4	Military-grade cryptographic security	Use of AES-256 and SHA-256 algorithms
+NFR-5	Recoverability after outage	Network self-healing in under 60 seconds
+NFR-6	Portability	Runs on standard hardware without cloud dependency
+2-4. System Architecture
 text
 ┌─────────────────────────────────────────────────────────────┐
-│                    لایه نمایش (Presentation)                 │
+│                  Presentation Layer                          │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  │
-│  │ داشبورد      │  │ نقشه تعاملی  │  │ گزارش‌های وضعیت  │  │
-│  │ فرماندهی     │  │ GIS          │  │ (SitRep)         │  │
+│  │ Command      │  │ Interactive  │  │ Situation        │  │
+│  │ Dashboard    │  │ GIS Map      │  │ Reports (SitRep) │  │
 │  └──────────────┘  └──────────────┘  └──────────────────┘  │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
-│                  لایه منطق کسب‌وکار (Business Logic)         │
+│                  Business Logic Layer                        │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  │
-│  │ موتور تصمیم‌ │  │ الگوریتم‌های │  │ سیستم اولویت‌   │  │
-│  │‌گیری AI     │  │ بهینه‌سازی   │  │‌بندی بحران      │  │
+│  │ AI Decision  │  │ Optimization │  │ Crisis           │  │
+│  │ Engine       │  │ Algorithms   │  │ Prioritization   │  │
 │  └──────────────┘  └──────────────┘  └──────────────────┘  │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  │
-│  │ سیستم هشدار  │  │ تولید داده‌  │  │ رمزنگاری و      │  │
-│  │ بلادرنگ      │  │ سنتتیک       │  │ امضای دیجیتال   │  │
-│  └──────────────┘  └──────────────┘  └──────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-                              │
-┌─────────────────────────────────────────────────────────────┐
-│                  لایه داده (Data Layer)                      │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  │
-│  │ پایگاه داده  │  │ داده‌های     │  │ دفترکل رمزنگاری  │  │
-│  │ موقعیت‌مکانی │  │ سنتتیک       │  │ (Blockchain)     │  │
+│  │ Real-time    │  │ Synthetic    │  │ Cryptography &   │  │
+│  │ Alert System │  │ Data Gen     │  │ Digital Signing  │  │
 │  └──────────────┘  └──────────────┘  └──────────────────┘  │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
-│              لایه ارتباطات (Communication Layer)             │
+│                  Data Layer                                  │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  │
-│  │ شبکه مش      │  │ LoRa/BLE     │  │ همگام‌سازی      │  │
+│  │ Geolocation  │  │ Synthetic    │  │ Cryptographic    │  │
+│  │ Database     │  │ Data         │  │ Ledger           │  │
+│  └──────────────┘  └──────────────┘  └──────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+┌─────────────────────────────────────────────────────────────┐
+│              Communication Layer                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐  │
+│  │ Mesh Network │  │ LoRa/BLE     │  │ Synchronization  │  │
 │  │ Ad-Hoc       │  │ Mesh         │  │ DTN              │  │
 │  └──────────────┘  └──────────────┘  └──────────────────┘  │
 └─────────────────────────────────────────────────────────────┘
-۳. نیازمندی‌های داده و تولید داده‌های سنتتیک
-۳-۱. ساختار داده‌های مورد نیاز
-برای آموزش و عملکرد صحیح مدل‌های هوش مصنوعی، به داده‌های زیر نیاز است:
+3. Data Requirements and Synthetic Data Generation
+3-1. Required Data Structure
+For proper training and operation of the AI models, the following data are required:
 
-۳-۱-۱. داده‌های جغرافیایی و جمعیتی
-مختصات جغرافیایی (طول و عرض جغرافیایی) هر منطقه
+3-1-1. Geographic and Demographic Data
+Geographic coordinates (longitude and latitude) of each area
 
-جمعیت هر منطقه
+Population of each area
 
-تراکم جمعیت و توزیع سنی
+Population density and age distribution
 
-زیرساخت‌های موجود (بندر، فرودگاه، جاده، بیمارستان)
+Existing infrastructure (port, airport, road, hospital)
 
-۳-۱-۲. داده‌های بلایا و بحران
-نوع بلایا (سیل، طوفان، زلزله، آتش‌سوزی، بالا آمدن آب دریا)
+3-1-2. Disaster and Crisis Data
+Type of disaster (flood, storm, earthquake, fire, sea level rise)
 
-شدت بلایا (مقیاس ۰ تا ۱۰)
+Severity of disaster (scale 0 to 10)
 
-زمان وقوع و مدت‌زمان
+Time of occurrence and duration
 
-مناطق تحت تأثیر
+Affected areas
 
-۳-۱-۳. داده‌های لجستیکی و منابع
-نوع منابع مورد نیاز (آب، غذا، دارو، پناهگاه، تجهیزات پزشکی)
+3-1-3. Logistics and Resource Data
+Type of resources needed (water, food, medicine, shelter, medical equipment)
 
-مقدار مورد نیاز بر اساس جمعیت
+Required quantity based on population
 
-موقعیت انبارهای امدادی
+Location of relief warehouses
 
-وسایل نقلیه موجود (نوع، ظرفیت، سرعت، شعاع عملیاتی)
+Available vehicles (type, capacity, speed, operational radius)
 
-۳-۱-۴. داده‌های شبکه ارتباطی
-وضعیت ارتباطات در هر منطقه
+3-1-4. Communication Network Data
+Communication status in each area
 
-نقاط دسترسی شبکه مش
+Mesh network access points
 
-کیفیت سیگنال و پهنای باند
+Signal quality and bandwidth
 
-۳-۲. تولید داده‌های سنتتیک
-با توجه به محدودیت دسترسی به داده‌های واقعی در مناطق جزیره‌ای， داده‌های سنتتیک به شرح زیر تولید می‌شوند:
+3-2. Synthetic Data Generation
+Given the limited access to real data in island regions, synthetic data are generated as follows:
 
-۳-۲-۱. کد تولید داده سنتتیک
+3-2-1. Synthetic Data Generation Code
 python
 """
-ماژول تولید داده سنتتیک برای سامانه AI-DSS Island
-این کد با الگوریتم رمزنگاری سفارشی محافظت شده است
+Synthetic data generation module for the AI-DSS Island system
+This code is protected with a custom cryptographic algorithm
 """
 
 import numpy as np
@@ -179,29 +179,29 @@ from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 # ============================================================
-# لایه رمزنگاری ثبت اختراع - "سیستم رمزنگاری چندلایه تطبیقی"
+# Patent cryptographic layer - "Adaptive Multi-Layer Cryptography System"
 # ============================================================
 
 class AdaptiveMultiLayerCipher:
     """
-    سیستم رمزنگاری چندلایه تطبیقی (AMLC)
-    این فناوری به عنوان اختراع ثبت شده و کد آن رمزنگاری شده است
-    ثبت اختراع: IR-P-2026-00842-AML
+    Adaptive Multi-Layer Cryptography System (AMLC)
+    This technology is a registered patent and its code is encrypted
+    Patent: IR-P-2026-00842-AML
     """
     
     def __init__(self, master_key: bytes):
         self.master_key = master_key
-        self.layer_count = 7  # تعداد لایه‌های رمزنگاری
+        self.layer_count = 7  # number of cryptographic layers
         self.adaptive_factor = self._generate_adaptive_factor()
         
     def _generate_adaptive_factor(self) -> bytes:
-        """تولید فاکتور تطبیقی بر اساس زمان و پارامترهای سیستمی"""
+        """Generate an adaptive factor based on time and system parameters"""
         timestamp = datetime.now().timestamp()
         system_info = f"{timestamp}-{id(self)}-AML-SEED".encode()
         return hashlib.sha3_256(system_info).digest()
     
     def _derive_layer_key(self, layer_index: int, context: bytes) -> bytes:
-        """اشتقاق کلید هر لایه بر اساس شاخص لایه و کانتکست"""
+        """Derive each layer's key based on the layer index and context"""
         kdf = PBKDF2HMAC(
             algorithm=hashes.SHA3_512(),
             length=32,
@@ -212,8 +212,8 @@ class AdaptiveMultiLayerCipher:
     
     def encrypt(self, plaintext: bytes, context: bytes = b"") -> bytes:
         """
-        رمزنگاری چندلایه تطبیقی
-        هر لایه از الگوریتم رمزنگاری متفاوتی استفاده می‌کند
+        Adaptive multi-layer encryption
+        Each layer uses a different encryption algorithm
         """
         data = plaintext
         layer_keys = []
@@ -222,25 +222,25 @@ class AdaptiveMultiLayerCipher:
             layer_key = self._derive_layer_key(i, context if context else data[:32])
             layer_keys.append(layer_key)
             
-            # لایه‌های زوج: AES-like، لایه‌های فرد: ChaCha20-like
+            # Even layers: AES-like, odd layers: ChaCha20-like
             if i % 2 == 0:
                 fernet = Fernet(base64.urlsafe_b64encode(layer_key))
                 data = fernet.encrypt(data)
             else:
-                # رمزنگاری ساده‌تر برای لایه‌های فرد (افزایش سرعت)
+                # Simpler encryption for odd layers (for speed)
                 xor_key = layer_key[:len(data)]
                 data = bytes(a ^ b for a, b in zip(data, xor_key * (len(data) // len(xor_key) + 1)))
                 data = data[:len(data)]
         
-        # افزودن هدر شامل تعداد لایه‌ها و اثر انگشت
+        # Add a header containing the number of layers and the fingerprint
         header = f"AMLv1|{self.layer_count}|".encode()
         fingerprint = hashlib.blake2b(data + self.master_key).digest()[:8]
         
         return header + fingerprint + data
     
     def decrypt(self, ciphertext: bytes, context: bytes = b"") -> bytes:
-        """رمزگشایی چندلایه تطبیقی"""
-        # استخراج هدر
+        """Adaptive multi-layer decryption"""
+        # Extract the header
         header_end = ciphertext.find(b"|", 10)
         if header_end == -1:
             raise ValueError("Invalid AML header")
@@ -248,7 +248,7 @@ class AdaptiveMultiLayerCipher:
         fingerprint = ciphertext[header_end + 1:header_end + 9]
         data = ciphertext[header_end + 9:]
         
-        # رمزگشایی معکوس
+        # Reverse decryption
         for i in range(self.layer_count - 1, -1, -1):
             layer_key = self._derive_layer_key(i, context if context else data[:32])
             
@@ -264,30 +264,30 @@ class AdaptiveMultiLayerCipher:
 
 
 # ============================================================
-# تولیدکننده داده سنتتیک
+# Synthetic data generator
 # ============================================================
 
 class SyntheticDataGenerator:
     """
-    تولیدکننده داده‌های سنتتیک برای آموزش مدل‌های هوش مصنوعی
-    با قابلیت تولید سناریوهای متنوع بحران در جزایر
+    Synthetic data generator for training artificial intelligence models
+    With the ability to generate diverse crisis scenarios on islands
     """
     
     def __init__(self, seed: int = 42):
         np.random.seed(seed)
         random.seed(seed)
-        self.island_types = ['مرجانی', 'آتشفشانی', 'رسوبی', 'مصنوعی']
-        self.hazard_types = ['سیل', 'طوفان', 'زلزله', 'آتش‌سوزی', 'بالاآمدن آب دریا', 'خشکسالی']
-        self.resource_types = ['آب', 'غذا', 'دارو', 'پناهگاه', 'سوخت', 'تجهیزات پزشکی', 'پتو']
-        self.transport_modes = ['پیاده', 'خودروی امدادی', 'هلیکوپتر', 'شناور', 'موتورسیکلت']
+        self.island_types = ['Coral', 'Volcanic', 'Sedimentary', 'Artificial']
+        self.hazard_types = ['Flood', 'Storm', 'Earthquake', 'Fire', 'Sea level rise', 'Drought']
+        self.resource_types = ['Water', 'Food', 'Medicine', 'Shelter', 'Fuel', 'Medical equipment', 'Blankets']
+        self.transport_modes = ['On foot', 'Relief vehicle', 'Helicopter', 'Vessel', 'Motorcycle']
         
     def generate_island_dataset(self, num_islands: int = 200) -> pd.DataFrame:
-        """تولید داده‌های جزایر"""
+        """Generate island data"""
         data = []
         for i in range(num_islands):
             island = {
                 'island_id': f'ISL-{i:04d}',
-                'name': f'جزیره-{i+1}',
+                'name': f'Island-{i+1}',
                 'island_type': random.choice(self.island_types),
                 'latitude': np.random.uniform(-90, 90),
                 'longitude': np.random.uniform(-180, 180),
@@ -304,7 +304,7 @@ class SyntheticDataGenerator:
         return pd.DataFrame(data)
     
     def generate_hazard_scenarios(self, num_scenarios: int = 1000) -> pd.DataFrame:
-        """تولید سناریوهای بحران"""
+        """Generate crisis scenarios"""
         scenarios = []
         for i in range(num_scenarios):
             hazard = {
@@ -324,8 +324,8 @@ class SyntheticDataGenerator:
     
     def generate_logistics_data(self, num_records: int = 5000) -> pd.DataFrame:
         """
-        تولید داده‌های لجستیکی با الهام از دیتاست‌های مشابه[reference:30]
-        شامل ۱۰۰۰ منطقه با پیچیدگی‌های لجستیکی
+        Generate logistics data inspired by similar datasets[reference:30]
+        Includes 1000 zones with logistical complexities
         """
         records = []
         for i in range(num_records):
@@ -351,7 +351,7 @@ class SyntheticDataGenerator:
         return pd.DataFrame(records)
     
     def generate_resource_allocation_data(self, num_allocations: int = 10000) -> pd.DataFrame:
-        """تولید داده‌های تخصیص منابع"""
+        """Generate resource allocation data"""
         allocations = []
         for i in range(num_allocations):
             allocation = {
@@ -371,34 +371,34 @@ class SyntheticDataGenerator:
         return pd.DataFrame(allocations)
     
     def generate_complete_dataset(self, output_dir: str = "./data"):
-        """تولید مجموعه داده کامل"""
+        """Generate the complete dataset"""
         import os
         os.makedirs(output_dir, exist_ok=True)
         
-        print("🔄 در حال تولید داده‌های سنتتیک...")
+        print("🔄 Generating synthetic data...")
         
-        # تولید داده‌های مختلف
+        # Generate the various data
         islands = self.generate_island_dataset(200)
         scenarios = self.generate_hazard_scenarios(1000)
         logistics = self.generate_logistics_data(5000)
         allocations = self.generate_resource_allocation_data(10000)
         
-        # ذخیره در فایل‌های CSV
+        # Save to CSV files
         islands.to_csv(f"{output_dir}/islands.csv", index=False)
         scenarios.to_csv(f"{output_dir}/hazard_scenarios.csv", index=False)
         logistics.to_csv(f"{output_dir}/logistics_zones.csv", index=False)
         allocations.to_csv(f"{output_dir}/resource_allocations.csv", index=False)
         
-        # تولید فایل یکپارچه برای آموزش مدل
+        # Generate a consolidated file for model training
         combined = self._create_training_dataset(islands, scenarios, logistics, allocations)
         combined.to_csv(f"{output_dir}/training_dataset.csv", index=False)
         
-        print(f"✅ داده‌های سنتتیک در '{output_dir}' ذخیره شد")
-        print(f"   - {len(islands)} جزیره")
-        print(f"   - {len(scenarios)} سناریوی بحران")
-        print(f"   - {len(logistics)} منطقه لجستیکی")
-        print(f"   - {len(allocations)} تخصیص منبع")
-        print(f"   - {len(combined)} رکورد آموزشی")
+        print(f"✅ Synthetic data saved to '{output_dir}'")
+        print(f"   - {len(islands)} islands")
+        print(f"   - {len(scenarios)} crisis scenarios")
+        print(f"   - {len(logistics)} logistics zones")
+        print(f"   - {len(allocations)} resource allocations")
+        print(f"   - {len(combined)} training records")
         
         return {
             'islands': islands,
@@ -409,8 +409,8 @@ class SyntheticDataGenerator:
         }
     
     def _create_training_dataset(self, islands, scenarios, logistics, allocations) -> pd.DataFrame:
-        """ایجاد دیتاست یکپارچه برای آموزش مدل‌های AI"""
-        # ترکیب داده‌ها با رویکرد مشابه FRIDA[reference:31]
+        """Create a consolidated dataset for training AI models"""
+        # Combine the data with an approach similar to FRIDA[reference:31]
         training_data = []
         
         for _, island in islands.iterrows():
@@ -446,15 +446,15 @@ class SyntheticDataGenerator:
 
 
 # ============================================================
-# نمونه استفاده از سامانه
+# Example system usage
 # ============================================================
 
 if __name__ == "__main__":
-    # ۱. تولید داده‌های سنتتیک
+    # 1. Generate synthetic data
     generator = SyntheticDataGenerator(seed=2026)
     dataset = generator.generate_complete_dataset("./synthetic_data")
     
-    # ۲. رمزنگاری داده‌های حساس
+    # 2. Encrypt sensitive data
     master_key = PBKDF2HMAC(
         algorithm=hashes.SHA3_512(),
         length=32,
@@ -464,8 +464,8 @@ if __name__ == "__main__":
     
     cipher = AdaptiveMultiLayerCipher(master_key)
     
-    # ۳. رمزنگاری فایل‌های داده
-    print("\n🔐 در حال رمزنگاری داده‌ها با سیستم AML...")
+    # 3. Encrypt data files
+    print("\n🔐 Encrypting data with the AML system...")
     for filename in ['islands.csv', 'hazard_scenarios.csv', 'logistics_zones.csv', 
                      'resource_allocations.csv', 'training_dataset.csv']:
         with open(f"./synthetic_data/{filename}", 'rb') as f:
@@ -476,13 +476,13 @@ if __name__ == "__main__":
         with open(f"./synthetic_data/{filename}.enc", 'wb') as f:
             f.write(encrypted)
         
-        print(f"   ✅ {filename} رمزنگاری شد")
+        print(f"   ✅ {filename} encrypted")
     
-    print("\n✅ فرآیند تولید و رمزنگاری داده‌ها با موفقیت انجام شد")
+    print("\n✅ Data generation and encryption process completed successfully")
 
 ## Development
 
-This repository implements the command dashboard (لایه نمایش) and its supporting API described in the SRS above. It is a two-service application:
+This repository implements the command dashboard (presentation layer) and its supporting API described in the SRS above. It is a two-service application:
 
 - `backend/` — FastAPI service exposing REST + WebSocket endpoints over islands, hazard scenarios, logistics zones, resource allocations, and real-time alerts. Includes the synthetic data generator used to seed demo data.
 - `frontend/` — React + TypeScript + Vite command dashboard: KPI overview, GIS map (MapLibre), logistics table, real-time alert feed, and SitRep view.

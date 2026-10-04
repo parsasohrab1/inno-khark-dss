@@ -4,10 +4,10 @@ from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
 
-ISLAND_TYPES = ["مرجانی", "آتشفشانی", "رسوبی", "مصنوعی"]
-HAZARD_TYPES = ["سیل", "طوفان", "زلزله", "آتش‌سوزی", "بالاآمدن آب دریا", "خشکسالی"]
-RESOURCE_TYPES = ["آب", "غذا", "دارو", "پناهگاه", "سوخت", "تجهیزات پزشکی", "پتو"]
-TRANSPORT_MODES = ["پیاده", "خودروی امدادی", "هلیکوپتر", "شناور", "موتورسیکلت"]
+ISLAND_TYPES = ["Coral", "Volcanic", "Sedimentary", "Artificial"]
+HAZARD_TYPES = ["Flood", "Storm", "Earthquake", "Fire", "Sea level rise", "Drought"]
+RESOURCE_TYPES = ["Water", "Food", "Medicine", "Shelter", "Fuel", "Medical equipment", "Blankets"]
+TRANSPORT_MODES = ["On foot", "Relief vehicle", "Helicopter", "Vessel", "Motorcycle"]
 
 
 class SyntheticDataGenerator:
@@ -23,7 +23,7 @@ class SyntheticDataGenerator:
             rows.append(
                 {
                     "island_id": f"ISL-{i:04d}",
-                    "name": f"جزیره-{i + 1}",
+                    "name": f"Island-{i + 1}",
                     "island_type": random.choice(ISLAND_TYPES),
                     "latitude": self._rng.uniform(-90, 90),
                     "longitude": self._rng.uniform(-180, 180),

@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 
 const links = [
-  { to: "/", label: "داشبورد فرماندهی", end: true },
-  { to: "/map", label: "نقشه تعاملی GIS" },
-  { to: "/logistics", label: "لجستیک و منابع" },
-  { to: "/alerts", label: "هشدارها" },
-  { to: "/sitrep", label: "گزارش وضعیت (SitRep)" },
+  { to: "/", label: "Command Dashboard", end: true },
+  { to: "/map", label: "Interactive GIS Map" },
+  { to: "/logistics", label: "Logistics and Resources" },
+  { to: "/alerts", label: "Alerts" },
+  { to: "/sitrep", label: "Situation Report (SitRep)" },
 ];
 
 export function Sidebar() {
